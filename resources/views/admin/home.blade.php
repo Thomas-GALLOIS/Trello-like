@@ -33,11 +33,11 @@
         </thead>
 
         @foreach ($users_all as $user)
-       {{--   <span id="name-{{$user->id}}"> Span : {{$user->name}}</span> --}}
+
         <div hidden id="input-{{$user->id}}">
             <div>
                 <form action="{{route('admin.update', $user->id)}}" method="POST">
-                    @csrf {{-- vai criar um token --}}
+                    @csrf
                     @method("PUT")
                     <input type="text" name="name" value="{{$user->name}}">
                     <input type="mail" name="email" value="{{$user->email}}">

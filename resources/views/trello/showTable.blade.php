@@ -174,45 +174,13 @@
                                             </div>
                                           </div>
                                         </div>
-                                   {{--<span id="name-table-{{$ticket->id}}" class="column_title">{{$ticket->content}}</span>
-
-
-
-
-
-                                               <div hidden id="input-name-table-{{$ticket->id}}">
-
-                                                    <input type="text" value="{{$ticket->content}}">
-                                                    <div>
-                                                        <button onclick="updateNameColumn({{$ticket->id}})">
-                                                            SAVE
-                                                        </button>
-                                                        @csrf
-                                                    </div>
-                                                </div>
-
-                                                <button class="btn btn-info btn-sm mr-1" onclick="toggleInput({{$ticket->id}})">
-                                                    EDITER
-                                                </button>
-
-                                                <form action="{{route('tickets.destroy',$ticket->id) }}" method="post">
-                                                    @method("DELETE")
-                                                    @csrf
-
-                                                    <input type="submit" value="Supprimer"/>
-                                                </form>--}}
-
                                 </div>
-
                             @endforeach
                         </div>
-                            </div>
-                            </div>
-                @endforeach
-
+                     </div>
+                </div>
+            @endforeach
     </div>
-
-
     <div class="form__group field">
         <form action="{{route('columns.store')}}" method="post">
             @csrf

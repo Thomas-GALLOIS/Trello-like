@@ -140,14 +140,18 @@
                             });
                     }
 
+                    //
+                    //Function to show guest input
+                    //
+
                     function maFonction() {
-  var div = document.getElementById("maDIV");
-  if (div.style.display === "none") {
-    div.style.display = "block";
-  } else {
-    div.style.display = "none";
-  }
-}
+                        var div = document.getElementById("maDIV");
+                        if (div.style.display === "none") {
+                            div.style.display = "block";
+                        } else {
+                        div.style.display = "none";
+                            }
+                        }
 
 
 
